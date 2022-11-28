@@ -1,23 +1,23 @@
 from distutils.log import error
 
 
-Mat=[]
+Matr=[]
 
-size=int(input("Tamaño de la matriz cuadrada: "))
-
-for i in range (0,size):
-    Mat.append([])
-    for j in range (0,size):
-        Mat[i].append(int(input()))
+size=int(input("ingrese tamaño de la matriz cuadrada: "))
 
 for i in range (0,size):
-    Mat.append([])
+    Matr.append([])
     for j in range (0,size):
-        if (Mat[i][j]!=Mat[j][i]):
-            print("Matriz no simetrica!")
-            print("ERROR FATAL")
+        Matr[i].append(int(input()))
+
+for i in range (0,size):
+    Matr.append([])
+    for j in range (0,size):
+        if (Matr[i][j]!=Matr[j][i]):
+            print("la matriz no es simetrica!")
+            print("error")
             error=0/0
 
 print("Matriz simetrica!")
 for i in range(0,size):
-    print(Mat[i])
+    print(Matr[i])
