@@ -2,16 +2,16 @@ import random
 
 lista=[]
 
-cant=int(input("Cantidad de números: "))
+cant=int(input("Cantidad de numeros: "))
 
 for i in range (0, cant):
-    num=random.randint(1,100)
+    nume=random.randint(1,100)
     lista.append(num)
 
 lista.sort()
-num=0
+nume=0
 
 for i in range (0, cant):
-    if (lista[i]>num):
+    if (lista[i]>nume):
         print(lista[i])
-        num=lista[i]
+        nume=lista[i]
